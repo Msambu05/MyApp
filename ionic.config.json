@@ -1,0 +1,7 @@
+{
+  "name": "Sortify",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

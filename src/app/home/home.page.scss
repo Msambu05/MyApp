@@ -1,0 +1,50 @@
+/* src/home/home.component.scss */
+
+/*.home-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}*/
+
+/* src/your-component/your-component.component.scss */
+
+ion-card-content {
+  padding: 20px; /* Increase padding for better spacing */
+  background-color: #f9f9f9; /* Light background for cards */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin: 10px 0; /* Space between multiple card contents */
+}
+
+p {
+  font-size: 16px; /* Increase font size for readability */
+  color: #333; /* Dark text color for contrast */
+  line-height: 1.5; /* Improved line spacing */
+  margin-bottom: 15px; /* Space below paragraphs */
+}
+
+ion-button {
+  --background: #4caf50; /* Primary button color */
+  --color: rgb(98, 196, 238); /* Button text color */
+  border-radius: 20px; /* Rounded button corners */
+  padding: 12px; /* Increased padding for a more substantial button */
+  font-weight: bold; /* Bold button text */
+}
+
+ion-button:hover {
+  --background: darken(#4caf50, 10%); /* Darken button on hover */
+}
+
+ion-button[expand='block'] {
+  width: 100%; /* Full width for block buttons */
+}
+
+ion-button[expand='full'] {
+  width: 100%; /* Ensure full width for full buttons */
+}

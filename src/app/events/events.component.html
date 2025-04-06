@@ -1,0 +1,18 @@
+<!-- events.component.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Community Events</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let event of events">
+      <ion-label>
+        <h2>{{ event.title }}</h2>
+        <p>{{ event.date }}</p>
+      </ion-label>
+      <ion-button (click)="rsvp(event)">RSVP</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

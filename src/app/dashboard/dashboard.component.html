@@ -1,0 +1,21 @@
+<!-- dashboard.component.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Total Points: {{ totalPoints }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button (click)="viewRewards()" routerLink="/rewards">View Rewards</ion-button>
+      <ion-button (click)="upcomingEvents()" routerLink="/events">Upcoming Events</ion-button>
+      <ion-button expand="full" routerLink="/report-waste">Report Waste</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+

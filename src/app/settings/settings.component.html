@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Enable Notifications</ion-label>
+    <ion-toggle [(ngModel)]="notificationsEnabled"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Dark Mode</ion-label>
+    <ion-toggle [(ngModel)]="darkModeEnabled"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Account Privacy</ion-label>
+    <ion-select [(ngModel)]="accountPrivacy">
+      <ion-select-option value="public">Public</ion-select-option>
+      <ion-select-option value="private">Private</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Email Notifications</ion-label>
+    <ion-toggle [(ngModel)]="emailNotificationsEnabled"></ion-toggle>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Language</ion-label>
+    <ion-select [(ngModel)]="selectedLanguage">
+      <ion-select-option value="en">English</ion-select-option>
+      <ion-select-option value="es">Spanish</ion-select-option>
+      <ion-select-option value="fr">French</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
+  <ion-button expand="full" (click)="saveSettings()">Save Settings</ion-button>
+</ion-content>

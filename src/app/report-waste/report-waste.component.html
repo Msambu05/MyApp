@@ -1,0 +1,22 @@
+<!-- report-waste.component.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Report Waste</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Upload Image</ion-label>
+    <ion-input type="file" accept="image/*"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Location</ion-label>
+    <ion-input [(ngModel)]="location"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Description</ion-label>
+    <ion-textarea [(ngModel)]="description"></ion-textarea>
+  </ion-item>
+  <ion-button expand="full" (click)="submitReport()">Submit Report</ion-button>
+</ion-content>

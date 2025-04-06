@@ -1,0 +1,27 @@
+<ion-header>
+  <div class="flex-center">
+    <ion-toolbar color="light">
+      <ion-title>Signup</ion-title>
+    </ion-toolbar>
+  </div>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="email" [(ngModel)]="email" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password" required></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="signup()">Sign Up</ion-button>
+
+  <ion-row>
+    <ion-col>
+      <ion-router-link routerLink="/login">Already have an account? Login</ion-router-link>
+    </ion-col>
+  </ion-row>
+</ion-content>

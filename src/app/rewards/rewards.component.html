@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Rewards System</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Points Earned: {{ points }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let reward of rewards">
+          <ion-label>{{ reward.name }} - {{ reward.cost }} Points</ion-label>
+          <ion-button slot="end" [disabled]="!reward.available" (click)="redeem(reward)">Redeem</ion-button>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
