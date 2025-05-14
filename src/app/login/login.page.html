@@ -7,21 +7,43 @@
 </ion-header>
 
 <ion-content>
-  <ion-item>
-    <ion-label position="floating">Email</ion-label>
-    <ion-input type="email" [(ngModel)]="email" required></ion-input>
-  </ion-item>
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
 
-  <ion-item>
-    <ion-label position="floating">Password</ion-label>
-    <ion-input type="password" [(ngModel)]="password" required></ion-input>
-  </ion-item>
+  <div class="container">
+    <ion-item>
+      <ion-label position="floating"><b>Email</b></ion-label>
+      <ion-input type="email" [(ngModel)]="email" required></ion-input>
+    </ion-item>
 
-  <ion-button expand="full" (click)="signIn()">Login</ion-button>
+    <ion-item>
+      <ion-label position="floating"><b>Password</b></ion-label>
+      <ion-input type="password" [(ngModel)]="password" required></ion-input>
+    </ion-item>
+    
+    <ion-button expand="full" (click)="signIn()">Login</ion-button>
+    
+    <ion-item lines="none">
+      <ion-checkbox slot="start" checked="true"></ion-checkbox>
+      <ion-label>Remember me</ion-label>
+    </ion-item>
+  </div>
 
-  <ion-row>
-    <ion-col>
-      <ion-router-link routerLink="/signup">Don't have an account? Sign up</ion-router-link>
-    </ion-col>
-  </ion-row>
+  <div class="container" style="background-color:#f1f1f1">
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" color="danger" (click)="cancel()">Cancel</ion-button>
+      </ion-col>
+      <ion-col>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-router-link routerLink="/signup">Don't have an account? Sign up</ion-router-link>
+      </ion-col>
+    </ion-row>
+  </div>
 </ion-content>
