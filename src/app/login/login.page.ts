@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -23,5 +24,13 @@ export class LoginPage {
       console.error('Sign-in error:', error);
       // Handle error (e.g., show an alert)
     }
+  }
+
+   cancel() {
+    // Navigate back or clear fields
+    this.email = '';
+    this.password = '';
+    // Or navigate somewhere else if needed
+    // this.navCtrl.navigateBack('/');
   }
 }

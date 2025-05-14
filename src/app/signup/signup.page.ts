@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-signup',
@@ -34,5 +35,14 @@ export class SignupPage {
   navigateToLogin() {
     // Navigate to the login page
     this.router.navigateByUrl('/login');
+  }
+
+  cancel() {
+    // Clear fields or navigate back
+    this.email = '';
+    this.password = '';
+    this.confirmPassword = '';
+    // Or navigate somewhere else if needed
+    // this.navCtrl.navigateBack('/');
   }
 }
