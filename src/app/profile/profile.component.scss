@@ -1,10 +1,7 @@
-/* src/profile/profile.component.scss */
-
-.profile-container {
-    padding: 16px;
+/* profile.page.scss */
+.profile-form {
+  ion-button {
+    --background: var(--primary-color);
+    margin-top: 24px;
   }
-  
-  .profile-info {
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
+}

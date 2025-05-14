@@ -1,0 +1,13 @@
+/* map-locator.page.scss */
+.map-container {
+  position: relative;
+  
+  .find-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    --background: var(--primary-color);
+  }
+}

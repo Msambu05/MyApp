@@ -1,11 +1,14 @@
-/* src/report-waste/report-waste.component.scss */
-
-.report-container {
-    padding: 16px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-  }
+/* report-waste.page.scss */
+.file-input {
+  padding: 16px;
   
-  .upload-button {
-    margin-top: 10px;
+  ion-label {
+    margin-bottom: 8px;
+    display: block;
   }
+}
+
+.submit-button {
+  --background: var(--primary-color);
+  margin-top: 24px;
+}

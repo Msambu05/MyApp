@@ -1,9 +1,14 @@
-/* src/settings/settings.component.scss */
-
-.settings-container {
-    padding: 16px;
-  }
+/* settings.page.scss */
+.settings-item {
+  --padding-start: 0;
+  margin-bottom: 12px;
   
-  .settings-item {
-    margin: 10px 0;
+  ion-label {
+    font-size: 1.1rem;
   }
+}
+
+.save-button {
+  --background: var(--primary-color);
+  margin-top: 32px;
+}

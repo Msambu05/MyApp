@@ -1,12 +1,17 @@
-/* src/events/events.component.scss */
-
-.event-list {
-    padding: 16px;
+/* events.page.scss */
+.event-item {
+  --padding-start: 0;
+  margin-bottom: 12px;
+  
+  h2 {
+    font-weight: 600;
   }
   
-  .event-item {
-    margin: 8px 0;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  p {
+    color: var(--medium-color);
   }
+  
+  ion-button {
+    --background: var(--secondary-color);
+  }
+}

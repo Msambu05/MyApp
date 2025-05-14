@@ -1,0 +1,11 @@
+/* rewards.page.scss */
+.rewards-card {
+  ion-card-title {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+  }
+  
+  ion-button[slot="end"] {
+    --background: var(--secondary-color);
+  }
+}
