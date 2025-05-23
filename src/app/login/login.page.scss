@@ -1,65 +1,146 @@
 /* src/login/login.component.scss */
 
-/* Full-width input fields */
-ion-input {
+/* Main container styling */
+ion-content {
+  --background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Card container */
+ion-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  max-width: 400px;
+  padding: 2rem;
+  margin: 0;
 }
 
-/* Set a style for all buttons */
-ion-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-ion-button:hover {
-  opacity: 0.8;
-}
-
-/* Extra styles for the cancel button */
-ion-button[color="danger"] {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
+/* Header styling */
+ion-card-header {
   text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
+  padding-bottom: 0;
+  
+  ion-card-title {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
   }
-  ion-button[color="danger"] {
-     width: 100%;
+  
+  ion-card-subtitle {
+    color: #7f8c8d;
+    margin: 0;
+    font-size: 0.9rem;
   }
+}
+
+/* Form styling */
+ion-item {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  --border-color: transparent;
+  margin-bottom: 1.5rem;
+  
+  ion-label {
+    color: #2c3e50;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  ion-input {
+    width: 100%;
+    --padding-start: 0.75rem;
+    --padding-end: 0.75rem;
+    --padding-top: 0.75rem;
+    --padding-bottom: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    
+    &:focus-within {
+      border-color: #3498db;
+      box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+    }
+  }
+}
+
+/* Login button */
+ion-button[type="submit"] {
+  --background: #3498db;
+  --color: white;
+  --border-radius: 4px;
+  --padding-top: 0.75rem;
+  --padding-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  
+  &:hover {
+    --background: #2980b9;
+  }
+}
+
+/* Remember me checkbox */
+ion-checkbox {
+  margin-right: 0.5rem;
+  --size: 16px;
+}
+
+/* Footer links */
+ion-footer {
+  background: transparent;
+  padding: 1rem;
+  
+  ion-toolbar {
+    --background: transparent;
+    --padding-start: 0;
+    --padding-end: 0;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    ion-button {
+      --color: #3498db;
+      font-size: 0.8rem;
+      margin: 0;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .signup-link {
+    text-align: center;
+    margin-top: 1rem;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    
+    a {
+      color: #3498db;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* Error message styling */
+.error-message {
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border-radius: 4px;
+  background-color: #fdecea;
+  color: #c62828;
+  font-size: 0.9rem;
 }
